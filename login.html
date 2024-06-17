@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      /* Estilos gerais */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-wrapper {
+        background: linear-gradient(to left, #d2d6dc, #f3f4f6);
+        border-radius: 10px;
+        padding: 2rem;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #374151;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="password"] {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: 2px solid #edf2f7;
+        border-radius: 5px;
+        background-color: #edf2f7;
+        color: #4b5563;
+        transition: background-color 0.2s ease-in-out,
+          border-color 0.2s ease-in-out;
+      }
+      .form-group input[type="text"]:focus,
+      .form-group input[type="password"]:focus {
+        outline: none;
+        border-color: #805ad5;
+        background-color: #ffffff;
+      }
+      .forgot-password {
+        font-weight: bold;
+        color: #374151;
+        text-align: right;
+        margin-top: 0.5rem;
+      }
+      .submit-button {
+        background-color: #805ad5;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.15s ease-in-out;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .submit-button:hover {
+        background-color: #6c3eb5;
+      }
+      .submit-button a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      /* Estilos responsivos */
+      @media only screen and (max-width: 600px) {
+        .form-wrapper {
+          padding: 1rem;
+        }
+        .form-title {
+          font-size: 1.2rem;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+          font-size: 0.9rem;
+          padding: 0.5rem;
+        }
+        .submit-button {
+          padding: 0.5rem 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form
+        class="form"
+        action="file:///C:/Users/Jo%C3%A3o%20Fabbri/Downloads/Calendario-master/Calendario-master/index.html"
+      >
+        <div class="form-title">Agenda Fácil NaF</div>
+
+        <div class="form-group">
+          <label for="inline-full-name">Login</label>
+          <input
+            id="inline-full-name"
+            type="text"
+            placeholder="insira o login"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="inline-password">Senha</label>
+          <input
+            id="inline-password"
+            type="password"
+            placeholder="******************"
+            required
+          />
+        </div>
+
+        <div class="form-group forgot-password">
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+
+        <div class="form-group">
+          <button class="submit-button" type="submit">Logar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
